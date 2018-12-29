@@ -14,7 +14,7 @@ export class RecipesComponent implements OnInit {
   ngOnInit() {
   }
 
-  openRecipeDetails(recipe) {
+  openRecipeDetails(recipe: Recipe) {
     this.selectedRecipe = recipe
   }
 

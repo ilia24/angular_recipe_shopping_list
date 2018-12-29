@@ -14,7 +14,7 @@ export class RecipeListComponent implements OnInit {
     new Recipe('Lemon merengue 2', 'The best pie sequel', "https://www.crazyforcrust.com/wp-content/uploads/2017/03/Lemon-Meringue-Pie-1-of-3.jpg")
   ];
 
-  bubbleRecipe(passedRecipe) {
+  bubbleRecipe(passedRecipe: Recipe) {
     this.recipeSelectionRecieved.emit(passedRecipe);
   }
 
