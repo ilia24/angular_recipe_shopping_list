@@ -12,10 +12,10 @@ export class ShoppingEditComponent {
   @ViewChild('nameInput') nameInput: ElementRef;
   @ViewChild('amountInput') amountInput: ElementRef;
 
-  constructor(private shoppingListService: ShoppingListService ) { }
+  constructor(private slService: ShoppingListService ) { }
 
   saveIngredient() {
-    this.shoppingListService.addIngredient(new Ingredient(this.nameInput.nativeElement.value, this.amountInput.nativeElement.value))
+    this.slService.addIngredients([new Ingredient(this.nameInput.nativeElement.value, this.amountInput.nativeElement.value)])
   }
 
 }
